@@ -1,11 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav
+				class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary bg-gradient border-bottom border-1 py-3"
+			>
+				<div class="container-xl">
+					<a class="navbar-brand" href="#">Navbar</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Prices</a>
+							</li>
+							<!-- <li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Dropdown
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</li>
+								</ul>
+							</li> -->
+							<!-- <li class="nav-item">
+								<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+							</li> -->
+						</ul>
+						<form class="d-flex" role="search">
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button class="btn btn-outline-light" type="submit">
+								Search
+							</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container-fluid bg-primary text-light py-5 my-5">
+			<div class="container-xl d-flex">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<p class="text-uppercase fw-bold fs-6">get started</p>
+						<h1 class="display-1 fw-bold lh-1">
+							This is really a great product!
+						</h1>
+						<p class="text-uppercase fw-bold fs-6 pt-4">
+							This is a great product
+						</p>
+					</div>
+					<div class="col-md-6">
+						<img
+							src="images/1.png"
+							alt="decorative illustration woman walking up stairs"
+							class="img-fluid"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid text-dark">
+			<div class="container-xl">
+				<div class="row text-center justify-content-center">
+					<div class="col-8">
+						<p class="text-uppercase fw-bold fs-6 text-primary">get started</p>
+						<p class="fw-semibold fs-2">
+							It really is such a great product - Elon would be so proud of us.
+							We're a great bunch of people.
+						</p>
+					</div>
+				</div>
+				<div class="row py-5">
+					<div class="col-md-4 col-sm-6">
+						<div class="card bg-primary">
+							<img
+								src="images/card_1.png"
+								class="card-img-top"
+								alt=" phone with map"
+							/>
+							<div class="card-body text-light">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+								<a href="#" class="btn btn-light">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="card">
+							<img
+								src="images/card_2.png"
+								class="card-img-top"
+								alt="person sitting down watching tv"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="card">
+							<img
+								src="images/card_3.png"
+								class="card-img-top"
+								alt="2 women talking"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">
+									Some quick example text to build on the card title and make up
+									the bulk of the card's content.
+								</p>
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+					<div class="row py-5 text-success">
+                        <i class="bi bi-boxes"></i>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="100"
+							height="100"
+							fill="currentColor"
+							class="bi bi-boxes"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"
+							/>
+						</svg>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-md-6">
+							<p class="text-uppercase fw-bold fs-6 text-primary">
+								get started
+							</p>
+							<h2 class="display-5 fw-bold">This is really a great product!</h2>
+							<p class="fw-thin fs-6">
+								If you BUY now, Ill be sending you another mystery bonus as a
+								token of appprectation. I'm selling this for $287 but you're
+								getting it for FREE today!
+							</p>
+						</div>
+						<div class="col-md-6">
+							<img
+								src="images/2.png"
+								alt="decorative illustration woman walking up stairs"
+								class="img-fluid"
+							/>
+						</div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img
+                                    src="images/3.png"
+                                    alt="decorative illustration woman walking up stairs"
+                                    class="img-fluid"
+                                />
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text-uppercase fw-bold fs-6 text-primary">
+                                    get started
+                                </p>
+                                <h2 class="display-5 fw-bold">This is really a great product!</h2>
+                                <p class="fw-thin fs-6">
+                                    If you BUY now, Ill be sending you another mystery bonus as a
+                                    token of appprectation. I'm selling this for $287 but you're
+                                    getting it for FREE today!
+                                </p>
+                                <div class="row">
+                                    <i class="bi bi-check2-circle"></i>
+                                    <h3>Title</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex esse repellendus pariatur tempora autem neque nesciunt dignissimos sed molestias? Earum voluptates expedita asperiores nihil minima distinctio assumenda nostrum vero voluptatibus!</p>
+                                    <i class="bi bi-check2-circle"></i>
+                                    <h3>Title</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil excepturi dolorem laboriosam id optio illo assumenda nulla, minus repudiandae, iure provident, quos ducimus accusamus labore enim unde? Tenetur, dolore molestias.</p>
+                                </div>
+                            </div>
+                            
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
