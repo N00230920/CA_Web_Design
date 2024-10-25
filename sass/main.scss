@@ -1,0 +1,29 @@
+//variables / mixins / functions //
+@import "../node_modules/bootstrap/scss/functions";
+
+$primary: green;
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$custom-colors: (
+	"tertiary": orange,
+	"tertiary-light": rgb(168, 102, 27),
+	"tertiary-dark": rgb(165, 81, 42),
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@each $color, $value in $colors {
+	.bg-#{$color} {
+		background-color: $value;
+	}
+	.bg-#{$color}-light {
+		background-color: tint-color($value, 60%);
+	}
+	.bg-#{$color}-dark {
+		background-color: shade-color($value, 200%);
+	}
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
