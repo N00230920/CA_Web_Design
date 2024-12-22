@@ -19,7 +19,7 @@
     <header #="top">        
         <nav class="navbar navbar-expand-lg">
             <div class="container-md border-bottom">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="rounded-2" src="/images/SG.png" alt="Smartguide" width="50" height="50">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">'
@@ -31,15 +31,25 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="create_form.html">Create</a>
+                                <a class="nav-link " href="create_form.html">Create</a>
                             </li>
                         </ul>
                     </div>
+
+                    <div class="w-50">
+                        <input class="form-control border-primary" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                            <datalist id="datalistOptions">
+                            <option value="Psychology">
+                            <option value="Computing">
+                            <option value="Media Studies">
+                            <option value="Medicine">
+                            <option value="Engineering">
+                            <option value="English">
+                            </datalist>
+                    </div>
+                    
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
-                            <li class="nav-item">
-                                <a href="search.html"><img src="/svg/search.svg" alt="User" width="30" height="30"></a>
-                            </li>
                             <li class="nav-item">
                                 <img src="/svg/notif.svg" alt="User" width="30" height="30">
                             </li>
@@ -50,7 +60,7 @@
                                 <a class="nav-link active text-primary" aria-current="page" href="#">Log in</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-bg-primary text-light rounded" href="#">Sign up</a>
+                                <button type="button" class="btn btn-primary text-light border-0 rounded-3 ">Sign up</button>
                             </li>
                         </ul>
                     </div>
@@ -61,5 +71,456 @@
 
         </div>
     </header>
+
+    <!-- sort and filter section -->
+    <div class="container-sm">
+        <div class="d-flex flex-row justify-content-between mx-5 py-3 px-5">
+            <div class="dropdown">
+                <button class="btn btn-tertiary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort by
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Newest</a></li>
+                    <li><a class="dropdown-item" href="#">Popularity</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-outline-tertiary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Filter
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousels -->
+    <main id="#main" class="bg-tertiary-light">
+
+        <!-- carousel 1 -->
+        <div class="container-fluid my-3">
+            <div class="container-sm d-flex flex-column">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <!-- carusel item 1 -->
+                    <div class="carousel-inner">
+                        <div class="container-sm px-5 mx-5">
+                            <h2 class="display-4 mx-5 px-1">Books</h2>
+                        </div>
+                        <div class="container-sm active d-flex flex-row gap-3 justify-content-center">
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- carusel item 2 -->
+                    <div class="carousel-item">
+                        <div class="container-sm active d-flex flex-row gap-3 justify-content-center">
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- carusel item 3 -->
+                    <div class="carousel-item">
+                        <div class="container-sm active d-flex flex-row gap-3 justify-content-center">
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- carousel 2 -->
+        <div class="container-fluid my-3">
+            <div class="container-sm d-flex flex-column">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <!-- carusel item 1 -->
+                    <div class="carousel-inner">
+                        <div class="container-sm px-5 mx-5">
+                            <h2 class="display-4 mx-5 px-1">Videos</h2>
+                        </div>
+                        <div class="container-sm active d-flex flex-row gap-3 justify-content-center">
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- carusel item 2 -->
+                    <div class="carousel-item">
+                        <div class="container-sm active d-flex flex-row gap-3 justify-content-center">
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- carusel item 3 -->
+                    <div class="carousel-item">
+                        <div class="container-sm active d-flex flex-row gap-3 justify-content-center">
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- carousel 3 -->
+        <div class="container-fluid my-3">
+            <div class="container-sm d-flex flex-column">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <!-- carusel item 1 -->
+                    <div class="carousel-inner">
+                        <div class="container-sm px-5 mx-5">
+                            <h2 class="display-4 mx-5 px-1">Articles</h2>
+                        </div>
+                        <div class="container-sm active d-flex flex-row gap-3 justify-content-center">
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- carusel item 2 -->
+                    <div class="carousel-item">
+                        <div class="container-sm active d-flex flex-row gap-3 justify-content-center">
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- carusel item 3 -->
+                    <div class="carousel-item">
+                        <div class="container-sm active d-flex flex-row gap-3 justify-content-center">
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <div class="card w-25 my-5 mt-2">
+                                <img src="/images/1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Category</p>
+                                    <a href="#" class="btn btn-tertiary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="container-fluid bg-dark text-light py-5">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-md-4 gap-3 d-flex flex-column">
+                        <h3>Follow us on</h3>
+                        <div>
+                            <img src="/svg/facebook.png" >
+                            <img src="/svg/twitter.png">
+                            <img src="/svg/insta.png">
+                            <img src="/svg/youtube.png">
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h3 class=" pb-3">About us</h3>
+                        
+                        <ul class="list-group list-group-flush">
+                            <li
+                                class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
+                            >
+                                Contact us
+                            </li>
+                            <li
+                                class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
+                            >
+                                Become a contributer
+                            </li>
+                            <li
+                                class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
+                            >
+                                Help
+                            </li>
+                            <li
+                                class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
+                            >
+                                FAQs
+                            </li>
+                            <li
+                                class="list-group-item bg-dark text-light fs-5 border-0 px-0 py-1"
+                            >
+                                Accessability
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <h3>Download</h3>
+                        <div class="d-flex flex-column gap-3">
+                            <img src="/images/google.png" class="w-50 rounded-3">
+                            <img src="/images/apple.png" class="w-50 rounded-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        
+            
 </body>
 </html>

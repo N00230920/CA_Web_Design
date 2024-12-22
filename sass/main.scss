@@ -3,17 +3,11 @@
 
 $primary: rgb(101, 102, 249);
 $secondary: rgb(7, 13, 89);
-$tertiary:rgb(227, 142, 73);
+$tertiary:rgb(241, 146, 68);
 
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
-
-$custom-colors: (
-	"tertiary": rgb(227, 142, 73),
-	"tertiary-light": rgb(242, 218, 199),
-	"tertiary-dark": rgb(183, 103, 37),
-);
 
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

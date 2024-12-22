@@ -19,7 +19,7 @@
     <header #="top">        
         <nav class="navbar navbar-expand-lg">
             <div class="container-md border-bottom">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="rounded-2" src="/images/SG.png" alt="Smartguide" width="50" height="50">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">'
@@ -50,7 +50,7 @@
                                 <a class="nav-link active text-primary" aria-current="page" href="#">Log in</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-bg-primary text-light rounded" href="#">Sign up</a>
+                                <button type="button" class="btn btn-outline-primary" href="#">Sign up</button>
                             </li>
                         </ul>
                     </div>
@@ -66,38 +66,194 @@
                     <h1 class="display-3 fw-bold">Create your</h1>
                     <h1 class="display-3 text-primary fw-bold mx-3">Project</h1>
                 </div>
-                <button class="text-bg-primary text-light border-0 rounded-3 p-2 fs-5 mt-3">Create</button>
+                <button type="button" class="btn btn-primary text-light border-0 rounded-3 p-2 fs-5 mt-3">Create</button>
             </div>
         </div>
     </div>
 
     <!-- form -->
     <div class="container-fluid py-3 my-3">
-        <div class="container-sm d-flex flex-row">
-            <div class="col-md-5 text-center bg-primary-subtle p-xxl-5 ms-xxl-5 rounded-3 border-black">
+        <div class="container-lg row justify-content-center mx-4">
+            <div class="col-sm-5 text-center bg-primary-subtle p-5 rounded-3 border-black align-content-center">
                 <h4 class="mb-xxl-5">Upload a brief or file here and it will make a form for you!</h4>
                 <div>
-                    <input class="form-control form-control-lg bg-tertiary-light" id="formFileLg" type="file">
+                    <input class="form-control form-control-lg" id="formFileLg" type="file">
                 </div>
             </div>
 
-            <div class="col-1 align-content-center mx-4">
+            <div class="col-sm-1 align-content-center text-center">
                 <h4>OR</h4>
             </div>
 
-            <div class="col-md-5 bg-primary-subtle p-xxl-3 rounded-4">
-                <div class="d-flex flex-row">
-                    <div class="row-md">
-                        <label for="inputTitle" class="form-label">Title</label>
+            <div class="col-sm-5 bg-primary-subtle p-3 rounded-4">
+                <div class="row-cols-1">
+                    <div class="mb-2">
+                        <label for="inputTitle" class="form-label h4">Title</label>
                         <input type="password" id="inputTitle" class="form-control" aria-describedby="passwordHelpBlock">
                         <div id="passwordHelpBlock" class="form-text"></div>
                     </div>
-                    <div class="just">
-                    <label for="exampleColorInput" class="form-label">Color picker</label>
+                    <div>
+                    <label for="exampleColorInput" class="form-label h5">Color picker</label>
                     <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
                     </div>
-                    
+                </div>
+
+                <div class="d-flex gap-4">
+                <div class="row-cols-1 my-4">
+                    <h5>Start Date</h5>
+                    <div class="d-flex flex-row">
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected>DD</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected>MM</option>
+                            <option value="1">January</option>
+                            <option value="2">Febuary</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected>YYYY</option>
+                            <option value="1">1990</option>
+                            <option value="2">1991</option>
+                            <option value="3">1992</option>
+                            <option value="4">1993</option>
+                            <option value="5">1994</option>
+                            <option value="6">1995</option>
+                            <option value="7">1996</option>
+                            <option value="8">1997</option>
+                            <option value="9">1998</option>
+                            <option value="10">1999</option>
+                            <option value="11">2000</option>
+                            <option value="12">2001</option>
+                            <option value="13">2002</option>
+                            <option value="14">2003</option>
+                            <option value="15">2004</option>
+                            <option value="16">2005</option>
+                            <option value="17">2006</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row-cols-1 my-4">
+                    <h5>End Date</h5>
+                    <div class="d-flex flex-row">
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected>DD</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected>MM</option>
+                            <option value="1">January</option>
+                            <option value="2">Febuary</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option selected>YYYY</option>
+                            <option value="1">1990</option>
+                            <option value="2">1991</option>
+                            <option value="3">1992</option>
+                            <option value="4">1993</option>
+                            <option value="5">1994</option>
+                            <option value="6">1995</option>
+                            <option value="7">1996</option>
+                            <option value="8">1997</option>
+                            <option value="9">1998</option>
+                            <option value="10">1999</option>
+                            <option value="11">2000</option>
+                            <option value="12">2001</option>
+                            <option value="13">2002</option>
+                            <option value="14">2003</option>
+                            <option value="15">2004</option>
+                            <option value="16">2005</option>
+                            <option value="17">2006</option>
+                        </select>
+                    </div>
                 </div>
             </div>
+                <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                    <option selected>Choose Access</option>
+                    <option value="1">Shared</option>
+                    <option value="2">Private</option>
+                </select>
+        </div>
 </body>
 </html>
