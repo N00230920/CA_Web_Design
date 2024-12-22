@@ -1,16 +1,20 @@
 //variables / mixins / functions //
 @import "../node_modules/bootstrap/scss/functions";
 
-$primary: green;
+$primary: rgb(101, 102, 249);
+$secondary: rgb(7, 13, 89);
+$tertiary:rgb(227, 142, 73);
+
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
 $custom-colors: (
-	"tertiary": orange,
-	"tertiary-light": rgb(168, 102, 27),
-	"tertiary-dark": rgb(165, 81, 42),
+	"tertiary": rgb(227, 142, 73),
+	"tertiary-light": rgb(242, 218, 199),
+	"tertiary-dark": rgb(183, 103, 37),
 );
+
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
@@ -22,7 +26,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 		background-color: tint-color($value, 60%);
 	}
 	.bg-#{$color}-dark {
-		background-color: shade-color($value, 200%);
+		background-color: shade-color($value, 100%);
 	}
 }
 
